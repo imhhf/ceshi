@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script>
+			(function (doc, win) {
+			  var docEl = doc.documentElement,
+			  resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			  recalc = function () {
+			    var clientWidth = docEl.clientWidth;
+			    if (!clientWidth) return;
+			    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			  };
+			 
+			  if (!doc.addEventListener) return;
+			  win.addEventListener(resizeEvt, recalc, false);
+			  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<title>花旗银行信用卡</title>
+	</head>
+	<body>
+		<div class="title">
+			<img class="backGround" src="img/title_background.png"/>
+			<img class="logo" src="img/logo.png"/>
+		</div>
+		
+		<img src="img/banner.jpg" />
+		<div class="p1_content_cont" id="wrapper">
+			<div id="scroller" class="roleScroll">
+				<div class="p1_title">行前准备,多重优惠</div>
+				<img src="img/line_top.png" />
+				<ul class="p1_ul">
+					<li onclick="javascript:location.href='p2.html'"><img src="img/li_jd.png"/></li>
+					<li onclick="javascript:location.href='p3.html'"><img src="img/li_jcjsj.png"/></li>
+					<li onclick="javascript:location.href='https://www.citibank.com.cn/sim/ICARD/usage_offer/tubao_wlan_detail.html'"><img src="img/li_wifi.png"/></li>
+					<li onclick="javascript:location.href='p10.html'"><img src="img/li_jp.png"/></li>
+					<li onclick="javascript:location.href='https://www.citibank.com.cn/sim/ICARD/usage_offer/hi_guide_detail.html'"><img src="img/li_hbc.png"/></li>
+					<li onclick="javascript:location.href='p2_1.html'"><img src="img/li_syjd.png"/></li>
+					<li onclick="javascript:location.href='warningPage.html'"><img src="img/li_lx.png"/></li>
+				</ul>
+				
+				<div class="p1_title">精彩旅途,礼遇相伴</div>
+				<img src="img/line_top.png" />
+				<ul class="p1_ul">
+					<li onclick="javascrli_msdzk2ipt:location.href='p5.html'"><img src="img/li_jcgbt.png"/></li>
+					<li onclick="showModel()"><img src="img/li_jflc.png"/></li>
+					<li onclick="javascript:location.href='warningPage3.html'"><img src="img/li_msdzk2.png" alt=""></li>
+					<li onclick="javascript:location.href='p6.html'"><img src="img/li_ltbz.png"/></li>
+
+					<li onclick="javascript:location.href='p7.html'"><img src="img/li_mhbzhf.png"/></li>
+					<li onclick="javascript:location.href='warningPage2.html'"><img src="img/li_hqhqly.png"/></li>
+					<!--<li><img src="img/yinlian.png"/></li>-->
+					<li onclick="javascript:location.href='p9.html'"><img src="img/li_msdzk.png"/></li>
+
+
+				</ul>
+				
+			</div>
+		</div>
+		
+		<div class="model_cont">
+			<div class="push_cont">
+				<div class="close_img"></div>
+				<div class="push_title">海外消费 积分礼程极速累积</div>
+				<ul class="p1_puch_ul">
+					<li>
+						<div class="p1_puch_l">
+							<img src="img/p1_hqzxk.png" />
+						</div>
+						<div class="p1_puch_r">
+							<div class="p1_puch_h1">
+								每消费人民币1元=2.5花旗积分<br> 每消费美金1元=18花旗积分
+							</div>
+							<div class="p1_puch_h2">
+								（18花旗积分=1花旗礼程）
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="p1_puch_l">
+							<img src="img/p1_hqlck.png" />
+						</div>
+						<div class="p1_puch_r">
+							<div class="p1_puch_h1 mt">
+								每消费人民币7元=1花旗礼程<br> 每消费美金1元=1花旗礼程
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="p1_puch_l">
+							<img src="img/p1_hqlxk.png" />
+						</div>
+						<div class="p1_puch_r">
+							<div class="p1_puch_h1 mt">
+								人民币卡和美元卡海外消费<br> 全年享3倍积分
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="push_tips">具体细则，请以花旗银行官方网站公布为准</div>
+			</div>
+		</div>
+
+
+
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				FastClick.attach(document.body);
+			});
+			$('.close_img').click(function(e){
+				$(".model_cont").css('display','none');
+			});
+			function showModel(){
+				$(".model_cont").css('display','block');
+			}
+		</script>		
+	</body>
+</html>
