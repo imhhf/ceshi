@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script>
+			(function (doc, win) {
+			  var docEl = doc.documentElement,
+			  resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			  recalc = function () {
+			    var clientWidth = docEl.clientWidth;
+			    if (!clientWidth) return;
+			    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			  };
+			 
+			  if (!doc.addEventListener) return;
+			  win.addEventListener(resizeEvt, recalc, false);
+			  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<title>花旗银行信用卡</title>
+	</head>
+	<body class="body-bg">
+		<div class="title">
+			<img class="backGround" src="img/title_background.png"/>
+			<img class="logo" src="img/logo.png"/>
+		</div>
+		
+		<div class="back_icon"></div>
+		<div class="bt_jd_icon_text"></div>
+		
+		<img src="img/up_shadow.png" />
+		<div class="jd_content_cont" style="padding: 0.64rem 0rem;">
+			<ul class="jd_ul">
+				<li onclick="javascript:location.href='https://www.citibank.com.cn/sim/ICARD/usage_offer/bookingshuakajin_mb_detail.html'"><img src="img/jd_1.png"/></li>
+				<li onclick="javascript:location.href='https://www.citibank.com.cn/sim/land/agoda_hotel/index.html'"><img src="img/jd_2.png"/></li>
+				<li onclick="javascript:location.href='https://www.citibank.com.cn/sim/ICARD/usage_offer/hotel_details.htm'"><img src="img/jd_3.png"/></li>
+				<!--<li onclick="javascript:location.href='https://www.citibank.com.cn/sim/ICARD/usage_offer/hotel_book.html'"><img src="img/jd_4.png"/></li>-->
+				<li onclick="javascript:location.href='http://www.citibank.com.cn/sim/land/relux/index.html'"><img src="img/jd_5.png"/></li>
+			</ul>
+		</div>
+		<img src="img/down_shadow.png" />
+		
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
